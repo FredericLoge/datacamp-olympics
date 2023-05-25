@@ -4,9 +4,11 @@ This repository contains the data on Olympics.
 In the `data/` folder there are two Comma Separated Values (CSV) files, `athlete_events.csv` and  `noc_regions.csv`.
 
 ## Part 1: preliminary data inspection, simple questions
+
+The first part of the datacamp is a fixed list of questions you should answer, in order to reproduce the basic first steps of dataset inspection.
 - load each csv file in a pandas DataFrame
 - briefly inspect each dataset: which information do they hold?
-- combine the information from both dataframes into a single one, using `pd.merge` based on their common column. Drop the two old dataframes.
+- combine the information from both dataframes into a single one, using `pd.merge` based on their common column. Delete the two old dataframes. In the new dataframe, drop the `NOC` and `notes` columns.
 - how many lines are there in the main dataset? Is this size problematic?
 - what is the time range of the data?
 - how many distinct athletes are in the dataset?
@@ -14,6 +16,7 @@ In the `data/` folder there are two Comma Separated Values (CSV) files, `athlete
 - how many distinct Events are covered? which ones have been
 - what is the repartition of the number of participations per athlete?
 - which event has the youngest participants on average? and the tallest?
+- how many athletes have an homonym in the dataset? which names correspond to the highest number of distinct athletes?
 
 ## Part 2: summarizing answers to questions with graphs
 Based on this data, many questions can be answered, here are a few examples:
